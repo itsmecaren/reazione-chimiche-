@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reazioni Chimiche</title>
+     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Playfair Display', serif;
+            font-size: 16px; /* Dimensione normale del testo */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px; /* Intestazione principale */
+        }
+
+        h2 {
+            font-size: 20px; /* Intestazione sezione */
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Sfondo grigio */
+            padding: 8px 0; /* Altezza */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .navigation a {
+            color: #333333; /* Colore del testo */
+            text-decoration: none;
+            margin: 0 8px; /* Spaziatura tra i link */
+            padding: 4px 10px; /* Altezza e larghezza */
+            border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Playfair Display', serif; /* Font elegante per i link */
+            font-size: 12px; /* Font più piccolo per i link */
+        }
+
+        .navigation a:hover {
+            background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
+            color: #ffffff; /* Colore del testo al passaggio del mouse */
+        }
+
+        .reaction-example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+        }
+  .important {
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .solubility-table {
+            margin-top: 15px;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.9em;
+        }
+        .solubility-table th, .solubility-table td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        .solubility-table th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        .solubility-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+ 
+    </style>
+</head>
+<body>
+ <!-- Navigazione -->
+    <div class="navigation">
+        <strong>Vai a:</strong>
+        <a href="#introduzione">Introduzione</a>
+        <a href="#tipi">Tipi di Reazioni</a>
+        <a href="#energia">Energia nelle Reazioni</a>
+        <a href="#esempi">Esempi nel Mondo Reale</a>
+        <a href="#nomenclatura">Nomenclatura</a>
+        <a href="#reattivita">Reattività degli Elementi</a>
+        <a href="#bilanciamento">Bilanciamento e Precipitato</a>
+        <a href="#solubilita">Solubilità</a>
+        <a href="#esercizi">Esercizi</a>
+    </div>
+    <h1>Le Reazioni Chimiche</h1>
+ 
+<div id="introduzione" class="section">
+        <h2>Introduzione alle Reazioni Chimiche</h2>
+        <p>
+            Le reazioni chimiche sono processi fondamentali che trasformano le sostanze attraverso la rottura e la formazione di legami chimici. Questi processi sono alla base di moltissimi fenomeni, dalla combustione alla digestione, e possono variare da reazioni semplici a reazioni complesse che coinvolgono più passaggi. Le reazioni chimiche sono classificate in base ai tipi di trasformazioni che subiscono i reagenti e ai prodotti finali che si formano.
+        </p>
+    </div>
+
+      <div id="tipi" class="section">
+        <h2>Tipi di Reazioni Chimiche</h2>
+
+        <h3>1. Reazioni di Sintesi</h3>
+        <p>
+            Le reazioni di sintesi, note anche come reazioni di combinazione, avvengono quando due o più reagenti si combinano per formare un unico prodotto. Questi tipi di reazioni sono comuni in chimica inorganica e si trovano spesso nei processi industriali.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> A + B → AB</p>
+            <p><strong>Esempio:</strong> 2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O (formazione dell'acqua dall'idrogeno e dall'ossigeno)</p>
+        </div>
+
+        <h3>2. Reazioni di Decomposizione</h3>
+        <p>
+            Nelle reazioni di decomposizione, un singolo composto si scinde in due o più prodotti più semplici. Queste reazioni possono essere indotte da calore, luce o elettricità. Sono alla base di molti processi industriali, come la produzione di ossigeno da composti chimici.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> AB → A + B</p>
+            <p><strong>Esempio:</strong> 2H<sub>2</sub>O<sub>2</sub> → 2H<sub>2</sub>O + O<sub>2</sub> (decomposizione del perossido di idrogeno)</p>
+        </div>
+
+        <h3>3. Reazioni di Scambio Semplice</h3>
+        <p>
+            In una reazione di scambio semplice, un elemento più reattivo sostituisce un altro elemento all'interno di un composto. Queste reazioni si verificano spesso nelle soluzioni acquose e dipendono dalla reattività relativa degli elementi coinvolti.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> A + BC → B + AC</p>
+            <p><strong>Esempio:</strong> Zn + 2HCl → ZnCl<sub>2</sub> + H<sub>2</sub> (il zinco sposta l'idrogeno dall'acido cloridrico)</p>
+        </div>
+
+        <h3>4. Reazioni di Doppio Scambio</h3>
+        <p>
+            Le reazioni di doppio scambio avvengono quando due composti scambiano i loro ioni o gruppi di atomi per formare due nuovi composti. Questo tipo di reazione è comune nelle reazioni di precipitazione e nelle reazioni acido-base.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> AB + CD → AD + CB</p>
+            <p><strong>Esempio:</strong> NaCl + AgNO<sub>3</sub> → NaNO<sub>3</sub> + AgCl (reazione di precipitazione)</p>
+        </div>
+
+        <h3>5. Reazioni di Combustione</h3>
+        <p>
+            Le reazioni di combustione coinvolgono un combustibile (solitamente un composto contenente carbonio) che reagisce con l'ossigeno per produrre energia sotto forma di calore e luce. Queste reazioni sono esotermiche e sono alla base di molti processi energetici come la combustione di combustibili fossili.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> Combustibile + O<sub>2</sub> → CO<sub>2</sub> + H<sub>2</sub>O</p>
+            <p><strong>Esempio:</strong> CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O (combustione del metano)</p>
+        </div>
+
+        <h3>6. Reazioni Acido-Base</h3>
+        <p>
+            Le reazioni acido-base coinvolgono il trasferimento di ioni idrogeno (H<sup>+</sup>) tra un acido e una base. Queste reazioni portano alla formazione di un sale e acqua. Sono fondamentali nella chimica analitica e in molti processi biologici.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> Acido + Base → Sale + Acqua</p>
+            <p><strong>Esempio:</strong> HCl + NaOH → NaCl + H<sub>2</sub>O (neutralizzazione dell'acido cloridrico con idrossido di sodio)</p>
+        </div>
+
+        <h3>7. Reazioni di Ossidazione-Reduzione (Redox)</h3>
+        <p>
+            Le reazioni redox coinvolgono il trasferimento di elettroni tra due specie chimiche, dove una si ossida (perde elettroni) e l'altra si riduce (acquista elettroni). Queste reazioni sono fondamentali per molti processi energetici, inclusi quelli biologici e industriali.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione Generale:</strong> A + B → A<sup>n+</sup> + B<sup>n-</sup></p>
+            <p><strong>Esempio:</strong> 2Na + Cl<sub>2</sub> → 2NaCl (il sodio si ossida e il cloro si riduce)</p>
+        </div>
+    </div>
+
+     <div id="energia" class="section">
+        <h2>Energia nelle Reazioni Chimiche</h2>
+        <h3>Reazioni Endotermiche</h3>
+        <p>
+            Le reazioni endotermiche assorbono energia dall'ambiente circostante. L'energia è necessaria per rompere i legami nei reagenti, e la quantità di energia assorbita è maggiore di quella rilasciata nella formazione dei prodotti.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio:</strong> N<sub>2</sub> + O<sub>2</sub> → 2NO (richiede energia per rompere i legami del gas azoto e ossigeno)</p>
+        </div>
+
+        <h3>Reazioni Esotermiche</h3>
+        <p>
+            Le reazioni esotermiche rilasciano energia nell'ambiente, solitamente sotto forma di calore. Queste reazioni sono comuni in natura e in processi industriali.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio:</strong> CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O (combustione del metano, che rilascia energia termica)</p>
+        </div>
+
+        <h3>Energia di Attivazione</h3>
+        <p>
+            L'energia di attivezione è la quantità minima di energia necessaria per avviare una reazione chimica. Anche nelle reazioni esotermiche, è necessario fornire un po' di energia per iniziare il processo. I catalizzatori abbassano l'energia di attivazione, permettendo alle reazioni di avvenire più rapidamente.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio:</strong> L'uso del platino come catalizzatore nella reazione di sintesi dell'ammoniaca (Processo Haber).</p>
+        </div>
+    </div>
+
+   <div id="esempi" class="section">
+        <h2>Esempi di Reazioni Chimiche nel Mondo Reale</h2>
+        <p>
+            Le reazioni chimiche sono ovunque attorno a noi. Sono fondamentali nei processi naturali come la fotosintesi e la respirazione cellulare, nonché nelle reazioni industriali per produrre materiali di uso quotidiano.
+        </p>
+
+        <h3>Fotosintesi</h3>
+        <p>
+            La fotosintesi è una reazione chimica che avviene nelle piante e in alcuni batteri, in cui l'energia luminosa viene convertita in energia chimica. L'anidride carbonica e l'acqua reagiscono in presenza di luce solare per formare glucosio e ossigeno.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Equazione della fotosintesi:</strong> 6CO<sub>2</sub> + 6H<sub>2</sub>O + luce solare → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub></p>
+        </div>
+
+        <h3>Respirazione Cellulare</h3>
+        <p>
+            La respirazione cellulare è una reazione chimica che si verifica negli organismi viventi, dove il glucosio viene ossidato per produrre energia utilizzabile dalle cellule sotto forma di ATP.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Equazione della respirazione cellulare:</strong> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> → 6CO<sub>2</sub> + 6H<sub>2</sub>O + ATP</p>
+        </div>
+
+        <h3>Reazioni Industriali</h3>
+        <p>
+            Le reazioni chimiche sono alla base di molti processi industriali che producono beni essenziali. Ad esempio, la produzione di ammoniaca tramite il processo Haber è essenziale per la produzione di fertilizzanti.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio:</strong> N<sub>2</sub> + 3H<sub>2</sub> → 2NH<sub>3</sub> (Processo Haber per la produzione di ammoniaca)</p>
+        </div>
+ <!-- Sezione Nomenclatura -->
+     <div id="nomenclatura" class="section">
+        <h2>Nomenclatura dei Composti Chimici</h2>
+        <p>
+            La nomenclatura dei composti chimici è essenziale per identificare i composti in base agli elementi che li compongono e ai rapporti tra questi. La nomenclatura è regolata dall'IUPAC, che stabilisce delle linee guida per il nome dei composti binari, ternari e altri complessi.
+        </p>
+        <h3>Composti Binari</h3>
+        <p>
+            I composti binari sono formati da due elementi. Possono essere costituiti da:
+            <ul>
+                <li><strong>Composti Ionici</strong>: formati da un metallo e un non-metallo. Ad esempio, il cloruro di sodio (NaCl).</li>
+                <li><strong>Composti Covalenti</strong>: formati da due non-metalli. Ad esempio, l'acqua (H<sub>2</sub>O) o il biossido di carbonio (CO<sub>2</sub>).</li>
+            </ul>
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio di nomenclatura binaria:</strong> NaCl è il Cloruro di Sodio. In questo caso, il nome del non-metallo è preceduto da una desinenza “-uro” e seguito dal nome del metallo.</p>
+        </div>
+        
+        <h3>Composti Ternari</h3>
+        <p>
+            I composti ternari contengono tre elementi, di cui spesso uno è l'ossigeno. I composti più comuni di questo tipo sono i <strong>ossalati</strong> e i <strong>nitrati</strong>. Gli ossianioni si formano con un elemento centrale (come azoto o zolfo) e ossigeno.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio di nomenclatura ternaria:</strong> NaNO<sub>3</sub> è il Nitrato di Sodio. Qui, l'anione termina con "-ato" per indicare un'alta presenza di ossigeno.</p>
+        </div>
+    </div>
+
+    <!-- Sezione Reattività degli Elementi -->
+     <div id="reattivita" class="section">
+        <h2>Reattività degli Elementi</h2>
+        <p>
+            La reattività degli elementi dipende dalla loro posizione nella tavola periodica e dalla tendenza a perdere o guadagnare elettroni. In generale:
+            <ul>
+                <li><strong>Metalli alcalini</strong> (gruppo 1) e <strong>metalli alcalino-terrosi</strong> (gruppo 2) sono molto reattivi, reagendo facilmente con acqua e ossigeno.</li>
+                <li><strong>Alogeni</strong> (gruppo 17) sono molto reattivi e tendono a formare composti con i metalli.</li>
+                <li><strong>Gas nobili</strong> (gruppo 18) sono molto stabili e reagiscono difficilmente.</li>
+            </ul>
+            La reattività aumenta nella parte sinistra della tavola periodica e nella parte inferiore per i metalli, mentre per i non-metalli aumenta spostandosi a destra.
+        </p>
+        <div class="reaction-example">
+            <p><strong>Esempio:</strong> Il potassio (K) reagisce violentemente con l'acqua, liberando idrogeno e formando idrossido di potassio (KOH), a causa della sua alta reattività.</p>
+        </div>
+    </div>
+
+    <!-- Sezione Bilanciamento delle Equazioni e Precipitato -->
+      <div id="bilanciamento" class="section">
+        <h2>Bilanciamento delle Equazioni Chimiche e Determinazione del Precipitato</h2>
+        <p>
+            Per bilanciare un'equazione chimica, è necessario garantire che il numero di atomi di ciascun elemento sia lo stesso nei reagenti e nei prodotti. Inoltre, in alcune reazioni, uno dei prodotti forma un precipitato.
+        </p>
+        <h3>Guida al Bilanciamento</h3>
+        <p>
+            Segui questi passaggi per bilanciare l'equazione e determinare il precipitato:
+            <ol>
+                <li><strong>Scrivi la reazione non bilanciata</strong>: In questo caso, il carbonato di potassio e il cloruro di zinco reagiscono per formare cloruro di potassio e carbonato di zinco.
+                <div class="reaction-example">
+                    <p>K<sub>2</sub>CO<sub>3</sub> + ZnCl<sub>2</sub> → KCl + ZnCO<sub>3</sub></p>
+                </div></li>
+                <li><strong>Conta gli atomi di ogni elemento</strong> su entrambi i lati della reazione e aggiungi i coefficienti necessari per bilanciare la reazione:
+                <div class="reaction-example">
+                    <p>Bilanciando: K<sub>2</sub>CO<sub>3</sub> + ZnCl<sub>2</sub> → 2KCl + ZnCO<sub>3</sub></p>
+                </div></li>
+                <li><strong>Identifica il precipitato</strong>: Il precipitato è il composto insolubile che si forma in una soluzione. Consultando la tabella di solubilità, scopriamo che ZnCO<sub>3</sub> è poco solubile in acqua, quindi è il precipitato.</li>
+            </ol>
+        </p>
+        <div class="reaction-example">
+            <p><strong>Reazione bilanciata e precipitato:</strong> K<sub>2</sub>CO<sub>3</sub> + ZnCl<sub>2</sub> → 2KCl + ZnCO<sub>3</sub> (ZnCO<sub>3</sub> è il precipitato)</p>
+        </div>
+    </div>
+<!-- Sezione Solubilità dei Composti -->
+     <div id="solubilita" class="section">
+        <h2>Solubilità dei Composti e Determinazione del Precipitato</h2>
+        <p>
+            La solubilità dei composti in acqua determina se si formerà un precipitato in una reazione. La maggior parte dei composti ionici può essere classificata come solubile o insolubile in acqua. Queste informazioni sono fondamentali per prevedere il risultato di una reazione in soluzione acquosa.
+        </p>
+        <h3>Tabella della Solubilità</h3>
+        <p>
+            La seguente tabella mostra alcuni principi generali di solubilità dei composti ionici in acqua.
+        </p>
+        <table class="solubility-table">
+            <thead>
+                <tr>
+                    <th>Composto</th>
+                    <th>Solubile/Insolubile</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nitrati (NO<sub>3</sub><sup>-</sup>)</td>
+                    <td>Solubile</td>
+                    <td>Indipendente dal catione</td>
+                </tr>
+                <tr>
+                    <td>Cloruri (Cl<sup>-</sup>)</td>
+                    <td>Solubile</td>
+                    <td>Insolubile con Ag<sup>+</sup>, Pb<sup>2+</sup>, Hg<sub>2</sub><sup>2+</sup></td>
+                </tr>
+                <tr>
+                    <td>Solfati (SO<sub>4</sub><sup>2-</sup>)</td>
+                    <td>Solubile</td>
+                    <td>Insolubile con Ba<sup>2+</sup>, Pb<sup>2+</sup>, Ca<sup>2+</sup></td>
+                </tr>
+                <tr>
+                    <td>Carbonati (CO<sub>3</sub><sup>2-</sup>)</td>
+                    <td>Insolubile</td>
+                    <td>Solubile con NH<sub>4</sub><sup>+</sup> e i metalli alcalini</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Questa tabella è utile per prevedere se i prodotti di una reazione formeranno un precipitato, identificando quelli che sono insolubili in acqua.
+        </p>
+    </div>
+
+    <!-- Sezione Esercizi Pratici -->
+    <div class="section">
+        <h2>Esercizi Pratici sul Bilanciamento e Precipitazione</h2>
+        <p>
+            Ecco una serie di esercizi per praticare la scrittura e il bilanciamento delle equazioni chimiche, oltre alla determinazione del precipitato. 
+        </p>
+
+        <h3>Esempio di Esercizio</h3>
+        <p>
+            <strong>Problema:</strong> Scrivi e bilancia l'equazione della reazione tra carbonato di sodio e solfato di calcio, e determina quale dei due prodotti è il precipitato.
+        </p>
+        <p>
+            <strong>Soluzione:</strong>
+            <ol>
+                <li><strong>Scrivi la reazione non bilanciata:</strong> Na<sub>2</sub>CO<sub>3</sub> + CaSO<sub>4</sub> → Na<sub>2</sub>SO<sub>4</sub> + CaCO<sub>3</sub></li>
+                <li><strong>Bilancia la reazione:</strong> Poiché il rapporto tra gli atomi è già bilanciato, l'equazione rimane: Na<sub>2</sub>CO<sub>3</sub> + CaSO<sub>4</sub> → Na<sub>2</sub>SO<sub>4</sub> + CaCO<sub>3</sub></li>
+                <li><strong>Identifica il precipitato:</strong> Consultando la tabella di solubilità, si nota che il CaCO<sub>3</sub> è insolubile in acqua, quindi è il precipitato.</li>
+            </ol>
+            <div class="reaction-example">
+                <p><strong>Equazione bilanciata e precipitato:</strong> Na<sub>2</sub>CO<sub>3</sub> + CaSO<sub>4</sub> → Na<sub>2</sub>SO<sub>4</sub> + CaCO<sub>3</sub> (CaCO<sub>3</sub> è il precipitato)</p>
+            </div>
+        </p>
+
+        <h3>Esercizi da Provare</h3>
+<div id="esercizi" class="section">
+        <ul>
+            <li>Scrivi e bilancia l'equazione della reazione tra nitrato di piombo (II) e ioduro di potassio. Determina quale prodotto è il precipitato.</li>
+            <li>Bilancia la reazione tra solfato di rame (II) e idrossido di sodio e identifica se si forma un precipitato.</li>
+            <li>Scrivi l'equazione bilanciata per la reazione tra cloruro di calcio e carbonato di sodio e determina se uno dei prodotti è il precipitato.</li>
+        </ul>
+    </div>
+   <!-- Sezione Solubilità dei Composti -->
+    <div class="section">
+        <h2>Tabella della Solubilità dei Composti Ionici in Acqua</h2>
+        <p>
+            La seguente tabella mostra la solubilità dei principali composti ionici in acqua. Queste informazioni sono cruciali per determinare se i prodotti di una reazione formeranno un precipitato.
+        </p>
+        <table class="solubility-table">
+            <thead>
+                <tr>
+                    <th>Composto</th>
+                    <th>Solubile</th>
+                    <th>Insolubile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nitrati (NO<sub>3</sub><sup>-</sup>)</td>
+                    <td>Tutti i nitrati sono solubili</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>Acetati (CH<sub>3</sub>COO<sup>-</sup>)</td>
+                    <td>Tutti gli acetati sono solubili</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>Cloruri (Cl<sup>-</sup>)</td>
+                    <td>Solubili eccetto con Ag<sup>+</sup>, Pb<sup>2+</sup>, Hg<sub>2</sub><sup>2+</sup></td>
+                    <td>AgCl, PbCl<sub>2</sub>, Hg<sub>2</sub>Cl<sub>2</sub></td>
+                </tr>
+                <tr>
+                    <td>Bromuri (Br<sup>-</sup>)</td>
+                    <td>Solubili eccetto con Ag<sup>+</sup>, Pb<sup>2+</sup>, Hg<sub>2</sub><sup>2+</sup></td>
+                    <td>AgBr, PbBr<sub>2</sub>, Hg<sub>2</sub>Br<sub>2</sub></td>
+                </tr>
+                <tr>
+                    <td>Solfati (SO<sub>4</sub><sup>2-</sup>)</td>
+                    <td>Solubili eccetto con Ba<sup>2+</sup>, Pb<sup>2+</sup>, Ca<sup>2+</sup>, Sr<sup>2+</sup></td>
+                    <td>BaSO<sub>4</sub>, PbSO<sub>4</sub>, CaSO<sub>4</sub>, SrSO<sub>4</sub></td>
+                </tr>
+                <tr>
+                    <td>Carbonati (CO<sub>3</sub><sup>2-</sup>)</td>
+                    <td>Insolubili eccetto con NH<sub>4</sub><sup>+</sup> e metalli alcalini</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>Fosfati (PO<sub>4</sub><sup>3-</sup>)</td>
+                    <td>Insolubili eccetto con NH<sub>4</sub><sup>+</sup> e metalli alcalini</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>Idrossidi (OH<sup>-</sup>)</td>
+                    <td>Insolubili eccetto con NH<sub>4</sub><sup>+</sup>, metalli alcalini, Ca<sup>2+</sup>, Sr<sup>2+</sup>, Ba<sup>2+</sup></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>Solfuri (S<sup>2-</sup>)</td>
+                    <td>Insolubili eccetto con NH<sub>4</sub><sup>+</sup>, metalli alcalini, Ca<sup>2+</sup>, Sr<sup>2+</sup>, Ba<sup>2+</sup></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Utilizza questa tabella per determinare la solubilità dei composti in una reazione. I composti identificati come insolubili formeranno un precipitato in soluzione acquosa.
+        </p>
+    </div>
+    </div>
+</body>
+</html>
